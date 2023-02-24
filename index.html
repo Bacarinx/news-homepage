@@ -16,11 +16,15 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="estilos/style.css">
+
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
     <title>News HomePage</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="logo navbar-brand">
@@ -31,88 +35,111 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbar">
                     <ul class="navbar-nav mr-auto">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" class="nav-link nav-item">Home</a>
                         </li>
                         <li>
-                            <a href="#">New</a>
+                            <a href="#" class="nav-link nav-item">New</a>
                         </li>
                         <li>
-                            <a href="#">Popular</a>
+                            <a href="#" class="nav-link nav-item">Popular</a>
                         </li>
                         <li>
-                            <a href="#">Trending</a>
+                            <a href="#" class="nav-link nav-item">Trending</a>
                         </li>
                         <li>
-                            <a href="#">Categories</a>
+                            <a href="#" class="nav-link nav-item">Categories</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="img-quad" id="quadro-area">
-                <img src="assets/images/image-web-3-mobile.jpg" alt="">
+            <div class="grid">
+                <div class="img-quad" id="quadro-area">
+                    <img class="img" src="assets/images/image-web-3-mobile.jpg" alt="">
+                </div>
+
+                <div class="content" id="content-area">
+                    <div class="content-title">
+                        <h1>The Bright Future on Web 3.0?</h1>
+                    </div>
+                    <div class="content-span">
+                        <p>We dive inti the next evolutuin of the web that claims to put the power of the platforms back into the hands oh people. But is it really fulfilling its promise?</p>
+                        <a href="#" class="main-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="news" id="news-area">
+                    <div class="title">
+                        <h1>New</h1>
+                    </div>
+                    <div class="questions">
+                        <h2>Hydrogen VS Electric Cars</h2>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <hr>
+                    <div class="questions">
+                        <h2>The Downsides of AI Artistry</h2>
+                        <p>What are the possible adverse effects og on-demand AI image generation?</p>
+                    </div>
+                    <hr>
+                    <div class="questions">
+                        <h2>Is VC Funding Drying Up?</h2>
+                        <p>Private funding by VC firms in down 50% YOY. We take a look at what that means</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="content" id="content-area">
-                <h1>The Bright Future oh Web 3.0></h1>
-                <p>We dive inti the next evolutuin of the web that claims to put the power of the platforms back into the hands oh people. But is it really fulfilling its promise?</p>
-                <a href="#" class="main-btn">READ MORE</a>
-            </div>
-
-            <div class="new" id="news-area">
-                <div class="title">
-                    <h1>New</h1>
+            <div class="tech" id="tech-area">
+                
+                <div class="mini-card first">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-4 col-lg-5 img-card">
+                                <img src="assets/images/image-retro-pcs.jpg" alt="">
+                            </div>
+                            <div class="col-8 col-lg-7">
+                                <h2>01</h2>
+                                <h3>Reviving Retro PCs</h3>
+                                <p>What happend when old PCs are given modern upgrades?</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-
-                <div class="questions">
-                    <h2>Hydrogen VS Electric Cars</h2>
-                    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                
+                <div class="mini-card second">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-4 col-lg-5 img-card">
+                                <img src="assets/images/image-top-laptops.jpg" alt="">
+                            </div>
+                            <div class="col-8 col-lg-7">
+                                <h2>02</h2>
+                                <h3>Top 10 Laptops of 2022</h3>
+                                <p>Our best picks for various needs and budgets</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="questions">
-                    <h2>The Downsides of AI Artistry</h2>
-                    <p>What are the possible adverse effects og on-demand AI image generation?</p>
-                </div>
-                <div class="questions">
-                    <h2>Is VC Funding Drying Up?</h2>
-                    <p>Private funding by VC firms in down 50% YOY. We take a look at what that means</p>
-                </div>
-
-                <div class="tech" id="tech-area">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="assets/images/image-retro-pcs.jpg" alt="">
+                
+                <div class="mini-card third">
+                    <a href="#">
+                        <div class="row">
+                            <div class="col-4 col-lg-5 img-card">
+                                <img src="assets/images/image-gaming-growth.jpg" alt="">
+                            </div>
+                            <div class="col-8 col-lg-7">
+                                <h2>03</h2>
+                                <h3>The growth of Gaming</h3>
+                                <p>How the pandemic has sparked frech opportunities</p>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <h2>01</h2>
-                            <h3>Reviving Retro PCs</h3>
-                            <p>What happend when old PCs are given modern upgrades?</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="assets/images/image-top-laptops.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h2>02</h2>
-                            <h3>Top 10 Laptops of 2022</h3>
-                            <p>Our best picks for various needs and budgets</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="assets/images/image-gaming-growth.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h2>03</h2>
-                            <h3>The growth of Gaming</h3>
-                            <p>How the pandemic has sparked frech opportunities</p>
-                        </div>
-                    </div>
-                </div>
+                    </a>
+                </div>    
             </div>
         </main>
     </div>

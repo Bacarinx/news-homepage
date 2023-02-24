@@ -1,1 +1,270 @@
 @charset "UTF-8";
+
+body {
+    font-size: 15px;
+    font-family: 'inter', arial, sans-serif;
+    margin: 0 10px;
+}
+
+nav {
+    padding: 0px;
+    margin: 20px 0 30px 0;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 24px;
+}
+
+.img-quad {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.img {
+    width: 100%;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+.content h1{
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: hsl(240, 100%, 5%);
+    
+}
+
+.content p {
+    font-size: 22px;
+    line-height: 2;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+
+.main-btn {
+    background-color: hsl(5, 60%, 62%);
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    border: 2px solid hsl(5, 60%, 62%);
+    color: hsl(5, 60%, 62%);
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.news {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.news h1 {
+    color: hsl(35, 77%, 62%);
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.news h2 {
+    font-weight: 800; 
+    margin-bottom: 15px;
+}
+
+.news p {
+    color: hsla(36, 100%, 99%, 0.678);
+    font-size: 20px;
+}
+
+.questions {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.mini-card {
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.219);
+    border-radius: 10px;
+}
+
+.mini-card h2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.mini-card h3 {
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+}
+
+.mini-card p {
+    color: hsl(236, 13%, 42%);
+    font-size: 20px;
+}
+
+.mini-card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.tech a {
+    text-decoration: none;
+}
+
+.mini-card:hover {
+    transform: scale(1.02);
+    transition: .6s;
+}
+
+.img-card {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+
+    body {
+        margin: 0 50px;
+    }
+
+    .img-quad {
+        margin-bottom: 30px;
+    }
+
+    .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 5fr, 6fr, 1fr;
+        column-gap: 20px;
+        row-gap: 5px;
+        grid-auto-rows: 460px;
+    }
+
+    .img-quad {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+
+    .content{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .news {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .content{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .content-title {
+        flex: 1;
+    }
+
+    .content-span {
+        flex: 1
+    }
+
+    .content h1 {
+        font-size: 55px;
+        line-height: 1.5;
+        align-self: center;
+    }
+    
+    .news h1 {
+        font-size: 40px;
+    }
+
+    .news h2 {
+        font-size: 20px;
+    }
+
+    .news p {
+        font-size: 18px;
+    }
+
+    .news {
+        padding: 20px;
+    }
+
+    .main-btn {
+        text-align: center;
+
+    }
+
+    /* Segundo grid */
+
+    .tech {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
+
+    .img-card {
+        width: 40%;
+        height: 100%;
+    }
+
+    .img-card img {
+        width: 100%;
+    }
+
+    .first {
+        grid-column-start: 1;
+    }
+
+    .second {
+        grid-column-start: 2;
+    }
+
+    .third {
+        grid-column-start: 3;
+    }
+    
+    .mini-card {
+        padding: 0px;
+        height: auto;
+    }
+
+    .mini-card h2 {
+        font-size: 30px;
+        margin-bottom: 00px;
+    }
+
+    .mini-card h3 {
+        font-size: 18px;
+    }
+
+    .mini-card p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
